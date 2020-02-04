@@ -14,6 +14,9 @@
     <arg name="use_rviz"                  default="true"/>
     <arg name="use_rtabmapviz"            default="false"/>
     
+    <rosparam>
+            /t265/tracking_module/enable_relocalization: false
+    </rosparam>
 
     <include file="$(find realsense2_camera)/launch/rs_d400_and_t265.launch">
             <arg name="device_type_camera1"             value="$(arg device_type_camera1)"/>
